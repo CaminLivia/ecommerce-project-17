@@ -1,0 +1,23 @@
+{
+  "name": "17-mag",
+  "version": "1.0.0",
+  "description": "Final Project FE17",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaminLivia/ecommerce-project-17.git"
+  },
+  "author": "Livia Camin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaminLivia/ecommerce-project-17/issues"
+  },
+  "homepage": "https://github.com/CaminLivia/ecommerce-project-17#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "bootstrap": "^5.1.3"
+  }
+}
