@@ -65,7 +65,7 @@ async function addNewProduct(event) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      productImageURL: newProductImageURL,
+      imageURL: newProductImageURL,
       name: newProductName,
       description: newProductDescription,
       brand: newProductBrand,
