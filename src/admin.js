@@ -14,17 +14,19 @@ async function getAllProducts() {
   const tableRows = products
     .map(
       (product) =>
-        `<tr>
-           <th scope="row">${product.id}</th>
-           <td><img src="./products_images/${product.imageURL}" style="width:64px"></td>
-           <td>${product.name}</td>
-           <td>${product.description}</td>
-           <td>${product.brand}</td>
-           <td>${product.gender}</td>
-           <td>${product.price} lei</td>
-           <td><button class="btn btn-danger delete" data-product-id=${product.id}>X
+        `<tr>       
+           <th scope="row"><a href="details.html?product-id=${product.id}">${product.id}</a></th>
+           <td><a href="details.html?product-id=${product.id}"><img src="./products_images/${product.imageURL}" style="width:64px"></a></td>
+           <td><a href="details.html?product-id=${product.id}">${product.name}</a></td>
+           <td><a href="details.html?product-id=${product.id}">${product.description}</a></td>
+           <td><a href="details.html?product-id=${product.id}">${product.brand}</a></td>
+           <td><a href="details.html?product-id=${product.id}">${product.gender}</a></td>           
+           <td><a href="details.html?product-id=${product.id}">${product.price} lei</a></td>      
+           <td><button class="btn btn-dark delete" data-product-id=${product.id}>
+           <div class="btn-align-center"><i class="ph-trash"></i></div>
            </button></td>
-           <td><button class="btn btn-primary edit" data-product-id=${product.id}>✏
+           <td><button class="btn btn-primary btn-orange edit" data-product-id=${product.id}>
+           <div class="btn-align-center"><i class="ph-pencil-simple-line"></i></div>
            </button></td>
         </tr>`
     )
@@ -54,12 +56,12 @@ addNewProductBtn.addEventListener("click", addNewProduct);
 async function addNewProduct(event) {
   event.preventDefault();
 
-  const newProductImageURL = document.getElementById("imageURL").value;
-  const newProductName = document.getElementById("name").value;
-  const newProductDescription = document.getElementById("description").value;
-  const newProductBrand = document.getElementById("brand").value;
-  const newProductGender = document.getElementById("gender").value;
-  const newProductPrice = document.getElementById("price").value;
+  const newProductImageURL = document.getElementById("newImageURL").value;
+  const newProductName = document.getElementById("newName").value;
+  const newProductDescription = document.getElementById("newDescription").value;
+  const newProductBrand = document.getElementById("newBrand").value;
+  const newProductGender = document.getElementById("newGender").value;
+  const newProductPrice = document.getElementById("newPrice").value;
 
   let response = await fetch(productsURL, {
     method: "POST",
@@ -85,9 +87,11 @@ async function addNewProduct(event) {
          <td>${product.brand}</td>
          <td>${product.gender}</td>
          <td>${product.price} lei</td>
-         <td><button class="btn btn-danger" data-product-id=${product.id}>X
+         <td><button class="btn btn-dark" data-product-id=${product.id}>
+         <div class="btn-align-center"><i class="ph-trash"></i></div>
          </button></td>
-         <td><button class="btn btn-primary" data-product-id=${product.id}>✏
+         <td><button class="btn btn-primary btn-orange edit" data-product-id=${product.id}>
+         <div class="btn-align-center"><i class="ph-pencil-simple-line"></i></div>
          </button></td>
       </tr>`;
 

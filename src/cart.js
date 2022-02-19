@@ -42,7 +42,7 @@ window.addEventListener("load", () => {
     if (cart.length == 0) {
       document.querySelector(
         ".cart-container"
-      ).innerHTML = `No products in cart. Return to <a href='./index.html'>shop</a>.`;
+      ).innerHTML = `No products in cart. Return to <a href='./index.html' class="btn-orange">shop</a>.`;
     } else {
       document.querySelector(".cart-container").innerHTML = productCards;
     }

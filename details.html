@@ -65,7 +65,7 @@
     </div>
 
     <!-- header -->
-    <div class="d-flex justify-content-around meniu" style="padding: 1.5em 0">
+    <div class="d-flex justify-content-around header-section">
       <!-- logo section -->
       <div>
         <a href="index.html">
@@ -100,10 +100,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Women</a>
+                <a class="nav-link" href="category.html?category=WOMAN">Woman</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Men</a>
+                <a class="nav-link" href="category.html?category=MAN">Man</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Sale</a>
@@ -170,12 +170,10 @@
 
     <div class="container spaces">
       <div class="row details-section">
-        <h2 class="section-title">DETAILS</h2>
+        <!-- <h2 class="section-title">DETAILS</h2> -->
         <div class="product-details"></div>
       </div>
     </div>
-
-    <!-- <div class="products-container"></div> -->
 
     <!-- brands section -->
     <h2 class="section-title">BRANDS</h2>
@@ -205,6 +203,7 @@
         /></a>
       </div>
     </div>
+
     <!-- Footer section -->
     <footer class="bg-footer text-center text-white">
       <div class="container p-4">
@@ -308,7 +307,6 @@
                     title="SOL"
                     href="https://webgate.ec.europa.eu/odr/main/index.cfm?event=main.home.show&lng=RO"
                     target="_blank"
-                    class="text-white"
                     >S.O.L.</a
                   >
                 </li>
@@ -317,12 +315,11 @@
                     title="ANPC"
                     href="http://www.anpc.gov.ro"
                     target="_blank"
-                    class="text-white"
                     >A.N.P.C.</a
                   >
                 </li>
                 <li>
-                  <a href="#!" class="text-white">Contact</a>
+                  <a href="#!">Contact</a>
                 </li>
               </ul>
             </div>
@@ -332,13 +329,13 @@
               <hr />
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#!" class="text-white">Terms & Conditions</a>
+                  <a href="#!">Terms & Conditions</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-white">Privacy Policy</a>
+                  <a href="#!">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-white">Delivery & Return</a>
+                  <a href="#!">Delivery & Return</a>
                 </li>
               </ul>
             </div>
@@ -349,10 +346,10 @@
               <ul class="list-unstyled mb-0">
                 <li>
                   Phone:
-                  <a href="tel:0700000000" class="text-white">0700 000 000</a>
+                  <a href="tel:0700000000">0700 000 000</a>
                 </li>
                 <li>
-                  Email: <a href="#!" class="text-white">contact@website.com</a>
+                  Email: <a href="#!">contact@website.com</a>
                 </li>
                 <li>Address: Bucharest, Romania</li>
               </ul>
@@ -361,11 +358,12 @@
         </section>
       </div>
 
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="bottom-footer p-3">
         © 2022 All rights reserved. Powered by Livia Camin.
       </div>
     </footer>
-
+    
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <script type="module" src="./src/details.js"></script>
   </body>
 </html>

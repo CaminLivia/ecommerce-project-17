@@ -9,39 +9,29 @@ window.addEventListener("load", async () => {
   const result = await fetch(productURL);
   const product = await result.json();
 
-  // const productCard = `
-  // 	<div class="card">
-  // 		<div class="card-header">
-  //   			Product Details
-  // 		</div>
-  // 		<div class="card-body">
-  //   			<h5 class="card-title">${product.name}</h5>
-  //   			<p class="card-text">${product.description}</p>
-  //   			<p class="card-text">${product.price} lei</p>
-  //   			<button data-product-id=${product.id} class="add-to-cart btn btn-primary">Add to cart</button>
-  // 		</div>
-  // 	</div>`;
-
   //  <h5 class="card-title">${product[productId].name}</h5> -> pentru json
 
   const productCard = `
-  <div class="card-image">
-    <img src='./products_images/${product.imageURL}' style="width:100%">
-    
-  </div>
+    <div class="card-image">
+      <img src='./products_images/${product.imageURL}' style="width:100%">
+    </div>
 
 		<div class="card-details">
 			<div class="card-header">
 	  			Product Details
 			</div>
 			<div class="card-body">
-	  			<h5 class="card-title">${product.name}</h5>
-	  			<p class="card-text">${product.description}</p>
-	  			<p class="card-text">${product.price} lei</p>
-	  			<button data-product-id=${product.id} class="add-to-cart btn btn-primary">Add to cart</button>
+	  			<h5 class="card-title"><strong>${product.name}</strong></h5>
+          <p class="card-text gray-text small-text">Product code: YA101203-${product.id}</p>
+	  			<p class="card-text gray-text">${product.description}</p>
+          <p class="card-text">Brand: <a href="brand.html?brand=${product.brand}">${product.brand}</a></p>
+          <p class="card-text">Category: <a href="category.html?category=${product.gender}">${product.gender}</a></p>
+          <p class="gray-text small-text"><i class="ph-check"></i> In stock</p>
+	  			<h4 class="card-text spaces">${product.price} lei <span class="gray-text small-text">VAT included</span></h4>
+	  			<button data-product-id=${product.id} class="add-to-cart btn btn-primary btn-orange">Add to cart</button>
 			</div>
       <div class="icons">
-      <div class="col-xs-12">
+      <div class="col-xs-12 gray-text">
         <svg xmlns="http://www.w3.org/2000/svg" width="30.094" height="50.117" viewBox="0 0 48.875 40.094">
           <path
             d="M10.782,37.623a4.123,4.123,0,1,0,4.072,4.122A4.1,4.1,0,0,0,10.782,37.623Zm28.5,0a4.123,4.123,0,1,0,4.071,4.122A4.1,4.1,0,0,0,39.281,37.623Zm6.881-20.61H30.89V28.3H49.459V20.351A3.318,3.318,0,0,0,46.162,17.013ZM30.89,41.746h2.285a6.107,6.107,0,1,1,12.214,0h1.9a2.182,2.182,0,0,0,2.168-2.2V29.921H30.89V41.746ZM15.52,18.4L1.787,32.3A4.12,4.12,0,0,0,.6,35.2V39.17a2.561,2.561,0,0,0,2.545,2.576H4.674a6.107,6.107,0,1,1,12.214,0h12.4V29.921H17.009V29.911l-7.814-.05,8.212-8.368,0.042,6.8H29.284V17.013H18.825A4.645,4.645,0,0,0,15.52,18.4ZM38.144,8.541c2.8-.464,5.143,4.1-3.572,6.921l1.749,0.031c10.945-2.254,8.555-10.583,2.531-9.587C32.571,6.951,31.071,15.4,31.071,15.4l1,0.018C32.086,15.382,35.225,9.026,38.144,8.541ZM23.982,15.447l1.75-.031c-8.714-2.824-6.376-7.385-3.572-6.921,2.918,0.485,6.057,6.84,6.075,6.876l1-.018S27.732,6.9,21.45,5.86C15.427,4.863,13.037,13.193,23.982,15.447Z"
@@ -51,7 +41,7 @@ window.addEventListener("load", async () => {
         <span> Free shipping </span>
       </div>
 
-      <div class="col-xs-12">
+      <div class="col-xs-12 gray-text">
           <svg
             xmlns="http://www.w3.org/2000/svg" width="30.094" height="50.117" viewBox="0 0 24.625 36.844">
             <path
@@ -63,7 +53,7 @@ window.addEventListener("load", async () => {
         </span>
       </div>
 
-      <div class="col-xs-12">
+      <div class="col-xs-12 gray-text">
           <svg xmlns="http://www.w3.org/2000/svg" width="30.094" height="50.117" viewBox="0 -24 464.00061 415.99985">
             <path
               d="M 256,338.89844 V 307 H 0 v 32.02734 C 0,368.03125 23.4375,392 52.445312,392 H 281.80078 c -2.19922,-2 -4.32031,-3.75391 -6.32422,-5.76172 C 262.94922,373.67187 255.94141,356.64062 256,338.89844 Z m 0,0"
@@ -85,7 +75,6 @@ window.addEventListener("load", async () => {
     </div>
  		</div>`;
 
-  console.log(product);
   document.querySelector(".product-details").innerHTML = productCard;
 });
 

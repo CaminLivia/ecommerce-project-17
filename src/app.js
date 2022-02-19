@@ -21,11 +21,17 @@ window.addEventListener("load", async () => {
       (product) =>
         `<div class="card" style="width:18rem">
                <div class="card-body">
-                  <img src='./products_images/${product.imageURL}' style="width:100%">
-                  <h5 class="card-title">${product.name}</h5>
-                  <p class="card-text">${product.price} lei</p>
-                  <a href="details.html?product-id=${product.id}" class="btn btn-primary">Details</a>
-               </div>
+                  <div>
+                    <a href="details.html?product-id=${product.id}">
+                      <img src='./products_images/${product.imageURL}' style="width:100%">
+                      <h5 class="card-title">${product.name}</h5>
+                      <p>${product.price} lei</p>
+                    </a>
+                  </div>
+                  <div class="butons-card">                    
+                    <button data-product-id=${product.id} class="add-to-cart btn btn-primary btn-orange">Add to cart</button>
+                  </div>
+                </div>
          </div>`
     )
     .join("");
@@ -46,13 +52,19 @@ window.addEventListener("load", async () => {
     .map(
       (product) =>
         `<div class="card" style="width: 18rem;">
-               <div class="card-body">
-               <img src='./products_images/${product.imageURL}' style="width:100%">
-                  <h5 class="card-title">${product.name}</h5>
-                  <p class="card-text">${product.price} lei</p>
-                  <a href="details.html?product-id=${product.id}" class="btn btn-primary">Details</a>
-               </div>
-         </div>`
+      <div class="card-body">
+          <div>
+            <a href="details.html?product-id=${product.id}">
+              <img src='./products_images/${product.imageURL}' style="width:100%">
+              <h5 class="card-title">${product.name}</h5>
+              <p>${product.price} lei</p>
+            </a>
+          </div>
+          <div class="butons-card">                    
+            <button data-product-id=${product.id} class="add-to-cart btn btn-primary btn-orange">Add to cart</button>
+          </div>
+      </div>
+    </div>`
     )
     .join("");
 
@@ -71,18 +83,58 @@ window.addEventListener("load", async () => {
     .map(
       (product) =>
         `<div class="card" style="width: 18rem;">
-               <div class="card-body">
-               <img src="./products_images/${product.imageURL}" style="width:100%">
-                  <h5 class="card-title">${product.name}</h5>
-                  <p class="card-text">${product.price} lei</p>
-                  <a href="details.html?product-id=${product.id}" class="btn btn-details">Details</a>
-                  <button data-product-id=${product.id} class="add-to-cart btn btn-primary">Add to cart</button>
-               </div>
-         </div>`
+      <div class="card-body">
+          <div>
+            <a href="details.html?product-id=${product.id}">
+              <img src='./products_images/${product.imageURL}' style="width:100%">
+              <h5 class="card-title">${product.name}</h5>
+              <p>${product.price} lei</p>
+            </a>
+          </div>
+          <div class="butons-card">                    
+            <button data-product-id=${product.id} class="add-to-cart btn btn-primary btn-orange">Add to cart</button>
+          </div>
+      </div>
+    </div>`
     )
     .join("");
 
-  console.log(cardsBestSeller);
-
   bestSellerProductContainer.innerHTML = cardsBestSeller;
 });
+
+document.querySelector(".products-home").addEventListener("click", addToCart);
+async function addToCart(event) {
+  const addToCartBtn = event.target;
+  let productId = addToCartBtn.getAttribute("data-product-id");
+
+  const productURL = `https://61f17300072f86001749f1f8.mockapi.io/products/${productId}`;
+  // const productsURL = `./src/products.json`;
+  const result = await fetch(productURL);
+  const product = await result.json();
+  console.log(product);
+
+  let cart = [];
+  if (localStorage.getItem("cart") == null) {
+    cart.push({ ...product, noOfProducts: 1 });
+    // cart.push({ ...product[productId], noOfProducts: 1 });
+  } else {
+    cart = JSON.parse(localStorage.getItem("cart"));
+    const productInCart = cart.find(
+      (productFromCart) => productFromCart.id == product.id
+      // (productFromCart) => productFromCart[productId] == product.id
+    );
+    if (productInCart != undefined) {
+      // productInCart[productId].noOfProducts++;
+      productInCart.noOfProducts++;
+      console.log("Produsul exista in cos");
+    } else {
+      const productToBeAddedInCart = { ...product, noOfProducts: 1 };
+      // const productToBeAddedInCart = { ...product[productId], noOfProducts: 1 };
+      cart.push(productToBeAddedInCart);
+      console.log("Produsul a fost adaugat prima oara in cos");
+    }
+  }
+
+  console.log(cart);
+  if (cart.length > 0) localStorage.setItem("cart", JSON.stringify(cart));
+}

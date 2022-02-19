@@ -65,7 +65,7 @@
     </div>
 
     <!-- header -->
-    <div class="d-flex justify-content-around meniu" style="padding: 1.5em 0">
+    <div class="d-flex justify-content-around header-section">
       <!-- logo section -->
       <div>
         <a href="index.html">
@@ -100,10 +100,10 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Women</a>
+                <a class="nav-link" href="category.html?category=WOMAN">Woman</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Men</a>
+                <a class="nav-link" href="category.html?category=MAN">Man</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Sale</a>
@@ -173,75 +173,141 @@
         <h2 class="section-title">ADMIN PAGE</h2>
         
         <div class="admin-products">
-          <div class="add-product">
-            <form class="new-product-form">
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="imageURL"
-                  placeholder="Image URL"
-                />
-              </div>
 
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Product name"
-                />
-              </div>
+          <div class="forms">
+            <!-- add new product -->
+            <div class="add-product form-section col-lg-6 col-sm-12 col-xs-12">
+              <form class="new-product-form">
+                <h4>Add new product</h4>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="newImageURL"
+                    placeholder="Image URL"
+                  />
+                </div>
 
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="description"
-                  placeholder="Product description"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="brand"
-                  placeholder="Product brand"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="gender"
-                  placeholder="Gender"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="price"
-                  placeholder="Product price"
-                />
-              </div>
-              <div class="form-group">
-                <input type="hidden" id="productId" name="productId" />
-              </div>
-  
-              <div>
-                <button class="update-product btn btn-primary">
-                  Update product
-                </button>
-                <button class="add-new-product btn btn-primary">
-                  Add new product
-                </button>
-              </div>
-            </form>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="newName"
+                    placeholder="Product name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="newDescription"
+                    placeholder="Product description"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="newBrand"
+                    placeholder="Product brand"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="newGender"
+                    placeholder="Gender"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="newPrice"
+                    placeholder="Product price"
+                  />
+                </div>
+                <div>
+                  <button class="add-new-product btn btn-primary btn-orange">
+                    Add new product
+                  </button>
+                </div>
+              </form>
+            </div>
+
+
+            <!-- update form -->
+            <div class="add-product form-section col-xl-6 col-lg-6 col-sm-12 col-xs-12">
+              <form class="new-product-form">
+                <h4>Update a product</h4>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="imageURL"
+                    placeholder="Image URL"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Product name"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="description"
+                    placeholder="Product description"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="brand"
+                    placeholder="Product brand"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="gender"
+                    placeholder="Gender"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="price"
+                    placeholder="Product price"
+                  />
+                </div>
+                <div class="form-group">
+                  <input type="hidden" id="productId" name="productId" />
+                </div>
+    
+                <div>
+                  <button class="update-product btn btn-primary btn-orange">
+                    Update product
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
+
           <div class="all-products-admin">
-            <table class="table table-striped">
-              <thead>
+            <table class="table table-striped background-table" style="overflow-x:auto;">
+              <thead class="header-table">
                 <tr>
                   <th scope="col">Id</th>
                   <th scope="col">Image</th>
@@ -250,6 +316,8 @@
                   <th scope="col">Brand</th>
                   <th scope="col">Gender</th>
                   <th scope="col">Price</th>
+                  <th></th>
+                  <th></th>
                 </tr>
               </thead>
               <tbody class="admin-products-table"></tbody>
@@ -392,7 +460,6 @@
                     title="SOL"
                     href="https://webgate.ec.europa.eu/odr/main/index.cfm?event=main.home.show&lng=RO"
                     target="_blank"
-                    class="text-white"
                     >S.O.L.</a
                   >
                 </li>
@@ -401,12 +468,11 @@
                     title="ANPC"
                     href="http://www.anpc.gov.ro"
                     target="_blank"
-                    class="text-white"
                     >A.N.P.C.</a
                   >
                 </li>
                 <li>
-                  <a href="#!" class="text-white">Contact</a>
+                  <a href="#!">Contact</a>
                 </li>
               </ul>
             </div>
@@ -416,13 +482,13 @@
               <hr />
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a href="#!" class="text-white">Terms & Conditions</a>
+                  <a href="#!">Terms & Conditions</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-white">Privacy Policy</a>
+                  <a href="#!">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="#!" class="text-white">Delivery & Return</a>
+                  <a href="#!">Delivery & Return</a>
                 </li>
               </ul>
             </div>
@@ -433,10 +499,10 @@
               <ul class="list-unstyled mb-0">
                 <li>
                   Phone:
-                  <a href="tel:0700000000" class="text-white">0700 000 000</a>
+                  <a href="tel:0700000000">0700 000 000</a>
                 </li>
                 <li>
-                  Email: <a href="#!" class="text-white">contact@website.com</a>
+                  Email: <a href="#!">contact@website.com</a>
                 </li>
                 <li>Address: Bucharest, Romania</li>
               </ul>
@@ -445,11 +511,12 @@
         </section>
       </div>
 
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="bottom-footer p-3">
         © 2022 All rights reserved. Powered by Livia Camin.
       </div>
     </footer>
 
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <script type="module" src="./src/admin.js"></script>
   </body>
 </html>

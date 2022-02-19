@@ -4,8 +4,8 @@
     "price": "15000",
     "description": "Mechanism: 5X53 quartz solart; Water resistance: WR 200 m; Material: titanium; Glass: curved sapphire crystal; Bracelet / Strap: titanium, 1 additional silicone strap",
     "imageURL": "SEIKO-ASTRON-5x-1.jpg",
-    "brand": "SEIKO-ASTRON",
-    "gender": "man",
+    "brand": "SEIKO ASTRON",
+    "gender": "MAN",
     "id": "1"
   },
   {
@@ -13,8 +13,8 @@
     "price": "14000",
     "description": "Mechanism: 5X53 quartz solart; Water resistance: WR 200 m; Material: titanium; Glass: curved sapphire crystal with anti-reflective coating; Bracelet / Strap: titanium",
     "imageURL": "SEIKO-ASTRON-5x-silver-1.jpg",
-    "brand": "SEIKO-ASTRON",
-    "gender": "man",
+    "brand": "SEIKO ASTRON",
+    "gender": "MAN",
     "id": "2"
   },
   {
@@ -23,7 +23,7 @@
     "description": "Mechanism: MB 25.07 automatic Swiss Made; Water resistance: WR 100 m; Material: stainless steel; Glass: sapphire crystal; Bracelet / Strap: rubber",
     "imageURL": "Montblank-TimeWalker-1.jpg",
     "brand": "MONTBLANC",
-    "gender": "man",
+    "gender": "MAN",
     "id": "3"
   },
   {
@@ -32,7 +32,7 @@
     "description": "Mechanism: MB 24.17 automatic Swiss Made; Water resistance: WR 50 m; Material: stainless steel; Glass: sapphire crystal; Bracelet / Strap: leather",
     "imageURL": "Montblank-4810-1.jpg",
     "brand": "MONTBLANC",
-    "gender": "man",
+    "gender": "MAN",
     "id": "4"
   },
   {
@@ -41,7 +41,7 @@
     "description": "Mechanism: MB 21.01 quartz Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: sapphire crystal; Bracelet / Strap: stainless steel",
     "imageURL": "Montblank-star-1.jpg",
     "brand": "MONTBLANC",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "5"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Mechanism: ETA quartz Swiss Made; Water resistance: WR 50 m; Material: stainless steel; Glass: black sapphire crystal, 97 diamonds, FG SI-VS, 0.58ct.; Bracelet / Strap: leather",
     "imageURL": "dior-christal-black.jpg",
     "brand": "DIOR",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "6"
   },
   {
@@ -59,7 +59,7 @@
     "description": "Mechanism: ETA quartz Swiss Made; Water resistance: WR 50 m; Material: stainless steel; Glass: white sapphire crystal, 44 diamonds, FG SI-VS, 0.22ct.; Bracelet / Strap: stainless steel, white sapphire crystal",
     "imageURL": "dior-christal-silver.jpg",
     "brand": "DIOR",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "7"
   },
   {
@@ -68,7 +68,7 @@
     "description": "Mechanism: Breitling 17 automatic, 25 rubine Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: stainless steel",
     "imageURL": "Breitling-Navitimer-blue-1.jpg",
     "brand": "BREITLING",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "8"
   },
   {
@@ -77,7 +77,7 @@
     "description": "Mechanism: Breitling 17 automatic, 25 rubine Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: stainless steel",
     "imageURL": "Breitling-Navitimer-silver-1.jpg",
     "brand": "BREITLING",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "9"
   },
   {
@@ -86,7 +86,7 @@
     "description": "Mechanism: Breitling 17 automatic, 25 rubine Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-Navitimer-red-1.jpg",
     "brand": "BREITLING",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "10"
   },
   {
@@ -95,7 +95,7 @@
     "description": "Mechanism: Breitling 17 automatic, 25 rubine Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: stainless steel",
     "imageURL": "Breitling-Navitimer-LightBrown-1.jpg",
     "brand": "BREITLING",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "11"
   },
   {
@@ -104,7 +104,7 @@
     "description": "Mechanism: Breitling 10 automatic, 25 rubine Swiss Made; Water resistance: WR 100 m; Material: stainless steel  316L; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "BreitlingSuperocean-1.jpg",
     "brand": "BREITLING",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "12"
   },
   {
@@ -113,7 +113,7 @@
     "description": "Mechanism: Breitling 17 automatic, 25 rubine Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-Navitimer-darkBlue-1.jpg",
     "brand": "BREITLING",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "13"
   },
   {
@@ -122,7 +122,7 @@
     "description": "Mechanism: Breitling 17 automatic, 25 rubine Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-Navitimer-Brown-1.jpg",
     "brand": "BREITLING",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "14"
   },
   {
@@ -131,7 +131,7 @@
     "description": "Mechanism: Breitling B03 (Manufacture) automatic, 46 rubine Swiss Made; Water resistance: WR 30 m; Material: gold 18 Kt; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-Navitimer-b03-1.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "15"
   },
   {
@@ -140,7 +140,7 @@
     "description": "Mechanism: Breitling 01 (Manufacture) automatic, 47 rubine Swiss Made; Water resistance: WR 30 m; Material: gold 18 Kt; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-Navitimer-b01c-1.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "16"
   },
   {
@@ -149,7 +149,7 @@
     "description": "Mechanism: Breitling 01 automatic 47 rubine Swiss Made; Water resistance: WR 30 m; Material: gold 18 Kt; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-Navitimer-01.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "17"
   },
   {
@@ -158,7 +158,7 @@
     "description": "Mechanism: Breitling 01 (Manufacture) automatic, 47 rubine Swiss Made; Water resistance: WR 30 m; Material: gold 18 Kt; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-Navitimer-1b01.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "18"
   },
   {
@@ -167,7 +167,7 @@
     "description": "Mechanism: Breitling 01 (Manufacture) automatic, 47 rubine Swiss Made; Water resistance: WR 100 m; Material: stainless steel and gold 18 Kt; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: rubber",
     "imageURL": "Breitling-super-1.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "19"
   },
   {
@@ -176,7 +176,7 @@
     "description": "Mechanism: Breitling B25 (Manufacture) automatic, 26 rubine Swiss Made; Water resistance: WR 100 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-premier-1.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "20"
   },
   {
@@ -185,7 +185,7 @@
     "description": "Mechanism: Breitling 01 (Manufacture) automatic, 47 rubine Swiss Made; Water resistance: WR 30 m; Material: stainless steel and gold 750; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-Navitimer-1b01-cr.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "21"
   },
   {
@@ -194,7 +194,7 @@
     "description": "Mechanism: Breitling B04 (Manufacture) automatic, 47 rubine Swiss Made; Water resistance: WR 100 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-super-avi-1.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "22"
   },
   {
@@ -203,7 +203,7 @@
     "description": "Mechanism: Breitling B04 (Manufacture) automatic, 47 rubine Swiss Made; Water resistance: WR 100 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-super-avi-mustang-1.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "23"
   },
   {
@@ -212,7 +212,7 @@
     "description": "Breitling 01 (Manufacture) automatic, 47 rubine Swiss Made; Water resistance: WR 200 m; Material: stainless steel and gold 18kt; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: rubber",
     "imageURL": "Breitling-superocean-h-1.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "24"
   },
   {
@@ -221,7 +221,7 @@
     "description": "Mechanism: Breitling 01 (Manufacture) automatic, 47 rubine Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-Navitimer-sw-1.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "25"
   },
   {
@@ -230,7 +230,7 @@
     "description": "Mechanism: Breitling 01 (Manufacture) automatic, 47 rubine Swiss Made; Water resistance: WR 200 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: stainless steel",
     "imageURL": "Breitling-superocean-heritage.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "26"
   },
   {
@@ -239,7 +239,7 @@
     "description": "Mechanism: Breitling 01 (Manufacture) automatic, 47 rubine Swiss Made; Water resistance: WR 200 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: stainless steel",
     "imageURL": "Breitling-superocean-heritage-blue.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "27"
   },
   {
@@ -248,7 +248,7 @@
     "description": "Mechanism: Breitling 19 automatic 38 rubine Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-Navitimer-1461.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "28"
   },
   {
@@ -257,7 +257,7 @@
     "description": "Mechanism: Breitling B09 (Manufacture) automatic, 28 rubine Swiss Made; Water resistance: WR 100 m; Material: stainless steel; Glass: domed sapphire crystal with anti-reflective coating; Bracelet / Strap: aligator leather",
     "imageURL": "Breitling-premier-b09-1.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "29"
   },
   {
@@ -266,7 +266,7 @@
     "description": "Mechanism: Breitling 24 automatic, 25 rubine Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: convex sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-Navitimer-gmt-1.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "30"
   },
   {
@@ -275,7 +275,7 @@
     "description": "Mechanism: Breitling 13 automatic, 25 rubine Swiss Made; Water resistance: WR 300 m; Material: stainless steel; Glass: sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-avenger-night-1.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "31"
   },
   {
@@ -284,7 +284,7 @@
     "description": "Mechanism: Breitling 13 automatic, 25 rubine Swiss Made; Water resistance: WR 300 m; Material: stainless steel; Glass: sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Breitling-avenger-night-green-1.jpg",
     "brand": "BREITLING",
-    "gender": "man",
+    "gender": "MAN",
     "id": "32"
   },
   {
@@ -293,7 +293,7 @@
     "description": "Mechanism: Breitling 13 automatic, 25 rubine Swiss Made; Water resistance: WR 50 m; Material: stainless steel; Glass: sapphire crystal with anti-reflective coating; Bracelet / Strap: aligator leather",
     "imageURL": "Frederique-Constant-Worldtimer-Manufacture.jpg",
     "brand": "FREDERIQUE CONSTANT",
-    "gender": "man",
+    "gender": "MAN",
     "id": "33"
   },
   {
@@ -302,7 +302,7 @@
     "description": "Mechanism: FC705-RGP automatic 26 rubine Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: sapphire crystal with anti-reflective coating; Bracelet / Strap: aligator leather",
     "imageURL": "Frederique-Constant-slim.jpg",
     "brand": "FREDERIQUE CONSTANT",
-    "gender": "man",
+    "gender": "MAN",
     "id": "34"
   },
   {
@@ -311,7 +311,7 @@
     "description": "Mechanism: MOFCLJP8051-D6-RGP automatic Swiss Made; Water resistance: WR 50 m; Material: stainless steel; Glass: convex sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Frederique-Constant-runabout-1.jpg",
     "brand": "FREDERIQUE CONSTANT",
-    "gender": "man",
+    "gender": "MAN",
     "id": "35"
   },
   {
@@ -320,7 +320,7 @@
     "description": "Mechanism: FC718-WM automatic 26 rubine Swiss Made; Water resistance: WR 50 m; Material: stainless steel; Glass: convex sapphire crystal with anti-reflective coating; Bracelet / Strap: aligator leather",
     "imageURL": "Frederique-Constant-Worldtimer-Manufacture-blue.jpg",
     "brand": "FREDERIQUE CONSTANT",
-    "gender": "man",
+    "gender": "MAN",
     "id": "36"
   },
   {
@@ -329,7 +329,7 @@
     "description": "Mechanism: MOFCSW200GMT-D3-M automatic Swiss Made; Water resistance: WR 100 m; Material: stainless steel; Glass: convex sapphire crystal with anti-reflective coating; Bracelet / Strap: leather",
     "imageURL": "Frederique-Constant-yacht.jpg",
     "brand": "FREDERIQUE CONSTANT",
-    "gender": "man",
+    "gender": "MAN",
     "id": "37"
   },
   {
@@ -338,7 +338,7 @@
     "description": "Mechanism: MORONDA515H2 D6 FC quartz Swiss Made; Water resistance: WR 50 m; Material: stainless steel, 40 diamonds, 0.47ct.; Glass: convex sapphire crystal with anti-reflective coating; Bracelet / Strap: stainless steel",
     "imageURL": "Frederique-Constant-clasic-l-1.jpg",
     "brand": "FREDERIQUE CONSTANT",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "38"
   },
   {
@@ -347,7 +347,7 @@
     "description": "Mechanism: MOFCSW300H1-D6 automatic Swiss Made; Water resistance: WR 50 m; Material: stainless steel; Glass: convex sapphire crystal with anti-reflective coating; Bracelet / Strap: stainless steel",
     "imageURL": "Frederique-Constant-clasic-d-1.jpg",
     "brand": "FREDERIQUE CONSTANT",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "39"
   },
   {
@@ -356,7 +356,7 @@
     "description": "Mechanism: MOFCSW300H1-D6 automatic Swiss Made; Water resistance: WR 50 m; Material: stainless steel, 60 diamonds, 0.46ct.; Glass: convex sapphire crystal with anti-reflective coating; Bracelet / Strap: leather, 1 additional silicone strap",
     "imageURL": "Frederique-Constant-slimline-1.jpg",
     "brand": "FREDERIQUE CONSTANT",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "40"
   },
   {
@@ -365,7 +365,7 @@
     "description": "Mechanism: ETA 2824-2 sau Sellita SW200 automatic Swiss Made; Water resistance: WR 30 m; Material: gold 14 Kt; Glass: sapphire crystal; Bracelet / Strap: leather",
     "imageURL": "atlantic-seagold.jpg",
     "brand": "ATLANTIC",
-    "gender": "man",
+    "gender": "MAN",
     "id": "41"
   },
   {
@@ -374,7 +374,7 @@
     "description": "Mechanism: ETA 2824-2 sau Sellita SW200 automatic Swiss Made; Water resistance: WR 30 m; Material: gold 14 Kt; Glass: sapphire crystal; Bracelet / Strap: leather",
     "imageURL": "atlantic-seagold-gold.jpg",
     "brand": "ATLANTIC",
-    "gender": "man",
+    "gender": "MAN",
     "id": "42"
   },
   {
@@ -383,7 +383,7 @@
     "description": "Mechanism: Sellita SW261-1.D3.ZH7 automatic Swiss Made; Water resistance: WR 30 m; Material: gold 14 Kt; Glass: sapphire crystal; Bracelet / Strap: leather",
     "imageURL": "atlantic-seagold-le.jpg",
     "brand": "ATLANTIC",
-    "gender": "man",
+    "gender": "MAN",
     "id": "43"
   },
   {
@@ -392,7 +392,7 @@
     "description": "Mechanism: ETA 7751.D12.ZH1 automatic Swiss Made; Water resistance: WR 50 m; Material: stainless steel; Glass: sapphire crystal; Bracelet / Strap: leather",
     "imageURL": "atlantic-seagold-Worldmaster.jpg",
     "brand": "ATLANTIC",
-    "gender": "man",
+    "gender": "MAN",
     "id": "44"
   },
   {
@@ -401,7 +401,7 @@
     "description": "Mechanism: ETA 7751.D12.ZH1 automatic Swiss Made; Water resistance: WR 50 m; Material: stainless steel; Glass: sapphire crystal; Bracelet / Strap: leather",
     "imageURL": "atlantic-seagold-Worldmaster-blue.jpg",
     "brand": "ATLANTIC",
-    "gender": "man",
+    "gender": "MAN",
     "id": "45"
   },
   {
@@ -410,7 +410,7 @@
     "description": "Mechanism: ETA F05.841 quartz Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: sapphire crystal; Bracelet / Strap: stainless steel",
     "imageURL": "atlantic-elegance.jpg",
     "brand": "ATLANTIC",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "46"
   },
   {
@@ -419,7 +419,7 @@
     "description": "Mechanism: ETA F05.841 quartz Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: sapphire crystal; Bracelet / Strap: leather",
     "imageURL": "atlantic-elegance-Moonphase.jpg",
     "brand": "ATLANTIC",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "47"
   },
   {
@@ -428,7 +428,7 @@
     "description": "Mechanism: Ronda 762 quartz Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: sapphire crystal; Bracelet / Strap: stainless steel",
     "imageURL": "atlantic-elegance-l.jpg",
     "brand": "ATLANTIC",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "48"
   },
   {
@@ -437,7 +437,7 @@
     "description": "Mechanism: Ronda R704 quartz Swiss Made; Water resistance: WR 30 m; Material: stainless steel; Glass: sapphire crystal; Bracelet / Strap: stainless steel",
     "imageURL": "atlantic-elegance-ll.jpg",
     "brand": "ATLANTIC",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "49"
   },
   {
@@ -446,7 +446,7 @@
     "description": "Mechanism: Ronda 705.D3.ZH2 quartz Swiss Made; Water resistance: WR 50 m; Material: stainless steel; Glass: sapphire crystal; Bracelet / Strap: stainless steel",
     "imageURL": "atlantic-lux.jpg",
     "brand": "ATLANTIC",
-    "gender": "woman",
+    "gender": "WOMAN",
     "id": "50"
   }
 ]

@@ -20,14 +20,20 @@ window.addEventListener("load", async () => {
   const cardsProductByBrand = productsByBrand
     .map(
       (product) =>
-        `<div class="card" style="width:18rem">
-               <div class="card-body">
-                  <img src='./products_images/${product.imageURL}' style="width:100%">
-                  <h5 class="card-title">${product.name}</h5>
-                  <p class="card-text">${product.price} lei</p>
-                  <a href="details.html?product-id=${product.id}" class="btn btn-primary">Details</a>
-               </div>
-         </div>`
+        `<div class="card brand-page" style="width: 18rem;">
+            <div class="card-body">
+                <div>
+                  <a href="details.html?product-id=${product.id}">
+                    <img src='./products_images/${product.imageURL}' style="width:100%">
+                    <h5 class="card-title">${product.name}</h5>
+                    <p>${product.price} lei</p>
+                  </a>
+                </div>
+                <div class="butons-card">                    
+                  <button data-product-id=${product.id} class="add-to-cart btn btn-primary btn-orange">Add to cart</button>
+                </div>
+            </div>
+    </div>`
     )
     .join("");
 
