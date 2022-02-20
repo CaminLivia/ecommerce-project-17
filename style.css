@@ -226,12 +226,11 @@ tbody a {
   color: #212121;
 }
 tbody a:hover {
-  color: #ff7b00;
+  color: #ff5100;
 }
 
 .forms {
   display: flex;
-  /* gap: 1em; */
   flex-wrap: wrap;
 }
 
@@ -239,11 +238,31 @@ tbody a:hover {
   border: 1px solid #e7e7e7;
   border-radius: 5px;
   padding: 1em;
-  /* margin: 1em; */
 }
 
 .form-control {
   border: none !important;
   border-bottom: 1px solid #bebebe !important;
   margin-bottom: 1em;
+}
+
+.sort {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.sort div:hover {
+  color: #ff5100;
+}
+
+.dropdown-item.active {
+  background-color: #ff5100 !important;
+}
+
+.dropdown-item:focus {
+  background-color: #ff5100a4 !important;
+  color: white !important;
 }

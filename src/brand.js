@@ -14,7 +14,8 @@ window.addEventListener("load", async () => {
   let productsByBrand = products.filter(
     (product) => product.brand == productBrand
   );
-  console.log(productsByBrand);
+  productsByBrand.reverse();
+
   const productsByBrandContainer = document.querySelector(".products-by-brand");
 
   const cardsProductByBrand = productsByBrand

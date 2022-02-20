@@ -99,11 +99,33 @@
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="category.html?category=WOMAN">Woman</a>
+              <li class="dropdown nav-item">
+                <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Woman
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item active" href="category.html?category=WOMAN">All Brands</a></li>
+                  <li><a class="dropdown-item" href="category.html?category=WOMAN&brand=MONTBLANC">MONTBLANC</a></li>
+                  <li><a class="dropdown-item" href="category.html?category=WOMAN&brand=ATLANTIC">ATLANTIC</a></li>
+                  <li><a class="dropdown-item" href="category.html?category=WOMAN&brand=BREITLING">BREITLING</a></li>
+                  <li><a class="dropdown-item" href="category.html?category=WOMAN&brand=FREDERIQUE%20CONSTANT">FREDERIQUE CONSTANT</a></li>
+                  <li><a class="dropdown-item" href="category.html?category=WOMAN&brand=SEIKO">SEIKO</a></li>
+                  <li><a class="dropdown-item" href="category.html?category=WOMAN&brand=DIOR">DIOR</a></li>
+                </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="category.html?category=MAN">Man</a>
+              <li class="dropdown nav-item">
+                <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Man
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="category.html?category=MAN">All Brands</a></li>
+                  <li><a class="dropdown-item" href="category.html?category=MAN&brand=MONTBLANC">MONTBLANC</a></li>
+                  <li><a class="dropdown-item" href="category.html?category=MAN&brand=ATLANTIC">ATLANTIC</a></li>
+                  <li><a class="dropdown-item" href="category.html?category=MAN&brand=BREITLING">BREITLING</a></li>
+                  <li><a class="dropdown-item" href="category.html?category=MAN&brand=FREDERIQUE%20CONSTANT">FREDERIQUE CONSTANT</a></li>
+                  <li><a class="dropdown-item" href="category.html?category=MAN&brand=SEIKO">SEIKO</a></li>
+                  <li><a class="dropdown-item" href="category.html?category=MAN&brand=DIOR">DIOR</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Sale</a>
@@ -363,6 +385,7 @@
       </div>
     </footer>
 
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="./src/brand.js"></script>
   </body>
 </html>
