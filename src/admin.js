@@ -86,6 +86,11 @@ async function addNewProduct(event) {
     }),
   });
 
+  document.querySelector(".add-new-product").innerHTML = "Product added.";
+  setTimeout(() => {
+    document.querySelector(".add-new-product").innerHTML = "Add new product";
+  }, 5000);
+
   let product = await response.json();
   console.log("newProduct", product);
 
@@ -135,6 +140,11 @@ async function updateProduct(event) {
       price: productPrice,
     }),
   });
+
+  document.querySelector(".update-product").innerHTML = "Product updated.";
+  setTimeout(() => {
+    document.querySelector(".update-product").innerHTML = "Update product";
+  }, 5000);
 
   let data = await response.json();
   console.log(data);

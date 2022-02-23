@@ -170,6 +170,11 @@ footer a:hover {
   padding: 0 2px;
 }
 
+.delete:hover {
+  color: #212121 !important;
+  background-color: white !important;
+}
+
 .total {
   display: flex;
   justify-content: space-between;
@@ -267,19 +272,12 @@ tbody a:hover {
   color: white !important;
 }
 
-.messageAddToCart {
-  margin-top: 10px;
-  border: 1px solid #ff5100;
-  background-color: #ff51000e;
+.nrProdCart {
+  padding: 3px 4px;
+  border: 3px solid #ff5100;
+  border-radius: 50%;
+  font-size: 13px;
+  background-color: #ff5100;
   text-align: center;
-  color: #ff5100;
-  display: none;
-}
-
-.messageAddToCart p {
-  margin-bottom: 0;
-}
-
-.showMessage {
-  display: block;
+  color: #ffffff;
 }
