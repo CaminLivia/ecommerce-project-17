@@ -266,3 +266,20 @@ tbody a:hover {
   background-color: #ff5100a4 !important;
   color: white !important;
 }
+
+.messageAddToCart {
+  margin-top: 10px;
+  border: 1px solid #ff5100;
+  background-color: #ff51000e;
+  text-align: center;
+  color: #ff5100;
+  display: none;
+}
+
+.messageAddToCart p {
+  margin-bottom: 0;
+}
+
+.showMessage {
+  display: block;
+}

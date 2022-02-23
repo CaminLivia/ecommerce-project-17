@@ -1,6 +1,7 @@
 const productTableBody = document.querySelector(".admin-products-table");
 const addNewProductBtn = document.querySelector(".add-new-product");
 const updateProductBtn = document.querySelector(".update-product");
+const nrProdCartHeader = document.querySelector(".nrProdCart");
 
 const productsURL = `https://61f17300072f86001749f1f8.mockapi.io/products`;
 // const productsURL = "./src/products.json";
@@ -10,6 +11,15 @@ window.addEventListener("load", getAllProducts);
 async function getAllProducts() {
   const result = await fetch(productsURL);
   const products = await result.json();
+
+  const cart = JSON.parse(localStorage.getItem("cart"));
+  let totalProductsInCart = 0;
+  if (cart != null) {
+    cart.forEach((productCart) => {
+      totalProductsInCart += productCart.noOfProducts;
+    });
+    nrProdCartHeader.innerHTML = totalProductsInCart;
+  }
 
   const tableRows = products
     .map(

@@ -1,3 +1,4 @@
+const nrProdCartHeader = document.querySelector(".nrProdCart");
 //  new In Products
 window.addEventListener("load", async () => {
   const productsURL = "https://61f17300072f86001749f1f8.mockapi.io/products";
@@ -5,6 +6,14 @@ window.addEventListener("load", async () => {
   const result = await fetch(productsURL);
   const products = await result.json();
   let nrOfProd = products.length - 1;
+  const cart = JSON.parse(localStorage.getItem("cart"));
+  let totalProductsInCart = 0;
+  if (cart != null) {
+    cart.forEach((productCart) => {
+      totalProductsInCart += productCart.noOfProducts;
+    });
+    nrProdCartHeader.innerHTML = totalProductsInCart;
+  }
 
   // creating newInProduct Cards
   let newInProducts = [];
@@ -126,15 +135,35 @@ async function addToCart(event) {
     if (productInCart != undefined) {
       // productInCart[productId].noOfProducts++;
       productInCart.noOfProducts++;
+      addToCartBtn.innerHTML =
+        "Product added to <a href='/cart.html'>cart</a>.";
+      setTimeout(() => {
+        addToCartBtn.innerHTML = "Add to cart";
+      }, 5000);
+
       console.log("Produsul exista in cos");
     } else {
       const productToBeAddedInCart = { ...product, noOfProducts: 1 };
       // const productToBeAddedInCart = { ...product[productId], noOfProducts: 1 };
       cart.push(productToBeAddedInCart);
+
+      addToCartBtn.innerHTML =
+        "Product added to <a href='/cart.html'>cart</a>.";
+      setTimeout(() => {
+        addToCartBtn.innerHTML = "Add to cart";
+      }, 5000);
+
       console.log("Produsul a fost adaugat prima oara in cos");
     }
   }
 
   console.log(cart);
-  if (cart.length > 0) localStorage.setItem("cart", JSON.stringify(cart));
+  if (cart.length > 0) {
+    localStorage.setItem("cart", JSON.stringify(cart));
+    let totalProductsInCart = 0;
+    cart.forEach((productCart) => {
+      totalProductsInCart += productCart.noOfProducts;
+    });
+    nrProdCartHeader.innerHTML = totalProductsInCart;
+  }
 }

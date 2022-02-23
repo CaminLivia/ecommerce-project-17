@@ -1,3 +1,5 @@
+const nrProdCartHeader = document.querySelector(".nrProdCart");
+
 window.addEventListener("load", async () => {
   let searchParamString = window.location.search;
 
@@ -8,6 +10,15 @@ window.addEventListener("load", async () => {
   // const productsURL = `./src/products.json`;
   const result = await fetch(productURL);
   const product = await result.json();
+
+  const cart = JSON.parse(localStorage.getItem("cart"));
+  let totalProductsInCart = 0;
+  if (cart != null) {
+    cart.forEach((productCart) => {
+      totalProductsInCart += productCart.noOfProducts;
+    });
+    nrProdCartHeader.innerHTML = totalProductsInCart;
+  }
 
   //  <h5 class="card-title">${product[productId].name}</h5> -> pentru json
 
@@ -102,15 +113,35 @@ async function addToCart(event) {
     if (productInCart != undefined) {
       // productInCart[productId].noOfProducts++;
       productInCart.noOfProducts++;
+      addToCartBtn.innerHTML =
+        "Product added to <a href='/cart.html'>cart</a>.";
+      setTimeout(() => {
+        addToCartBtn.innerHTML = "Add to cart";
+      }, 5000);
+
       console.log("Produsul exista in cos");
     } else {
       const productToBeAddedInCart = { ...product, noOfProducts: 1 };
       // const productToBeAddedInCart = { ...product[productId], noOfProducts: 1 };
       cart.push(productToBeAddedInCart);
+
+      addToCartBtn.innerHTML =
+        "Product added to <a href='/cart.html'>cart</a>.";
+      setTimeout(() => {
+        addToCartBtn.innerHTML = "Add to cart";
+      }, 5000);
+
       console.log("Produsul a fost adaugat prima oara in cos");
     }
   }
 
   console.log(cart);
-  if (cart.length > 0) localStorage.setItem("cart", JSON.stringify(cart));
+  if (cart.length > 0) {
+    localStorage.setItem("cart", JSON.stringify(cart));
+    let totalProductsInCart = 0;
+    cart.forEach((productCart) => {
+      totalProductsInCart += productCart.noOfProducts;
+    });
+    nrProdCartHeader.innerHTML = totalProductsInCart;
+  }
 }
